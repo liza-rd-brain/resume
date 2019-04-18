@@ -1,0 +1,28 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "Study project with Webpsck, BEM, SCSS, Pug",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack",
+    "serv": "static build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MinakovaLisa/resume.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MinakovaLisa/resume/issues"
+  },
+  "homepage": "https://github.com/MinakovaLisa/resume#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "node-static": "^0.7.11",
+    "pug": "^2.0.3",
+    "pug-loader": "^2.4.0",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0"
+  }
+}
