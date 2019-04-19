@@ -25,7 +25,18 @@ module.exports = {
         options: {
           pretty: true
         }
+      },
+      {
+        test: /\.scss$/,
+        use: ["style-loader", "css-loader", "sass-loader"]
+      },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"]
       }
     ]
+  },
+  devServer: {
+    stats: "errors-only"
   }
 };
