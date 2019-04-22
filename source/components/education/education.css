@@ -1,0 +1,84 @@
+
+.resume-img {
+    width: 148px;
+    height: 143px;
+    margin-right: 43px;
+  }
+  
+  .resume-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 64px;
+  }
+  
+  .resume-title__text {
+    color: #3d6cb0;
+    font-family: "Myriad Pro";
+    font-size: 82px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+  }
+  
+  .resume-title__text::after {
+    content: "";
+    display: block;
+    width: 623px;
+    height: 11px;
+    background-color: #3d6cb0;
+    margin-left: 21px;
+  }
+  
+  .education-item {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-left: 107px;
+    margin-bottom: 41px;
+  }
+  
+  .education-item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #000;
+    border-radius: 50%;
+    left: -87px;
+    top: 10px;
+  }
+  
+  .education-item__title_weight-bold {
+    color: #3d6cb0;
+    font-family: "Myriad Pro";
+    font-size: 51px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  .education-item__title_weight-thin {
+    color: #020202;
+    font-family: "Myriad Pro";
+    font-size: 51px;
+    font-weight: 400;
+  }
+  
+  .education-item__title_weight-standart {
+    color: #000000;
+    font-family: "Myriad Pro";
+    font-size: 51px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 31px;
+  }
+  
+  .education-item_text {
+    color: #000000;
+    font-family: "Myriad Pro";
+    font-size: 31px;
+    font-weight: 400;
+    margin: 0;
+  }
+  
