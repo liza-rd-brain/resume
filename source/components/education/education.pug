@@ -1,10 +1,8 @@
+include ../title/title.pug
+
 div(class ="resume-item education")
-    div(class="resume-title")
-        img(src= require("./education_icon.png")
-            alt="education_icon"
-            width="148"
-            height="143")
-        span(class="resume-title__text") EDUCATION
+    +title("images/education_icon.png",'EDUCATION')
+    
 
     div(class="education-item")      
         span(class="education-item__title_weight-bold") MASTER DEGREE
