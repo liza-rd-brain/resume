@@ -1,7 +1,3 @@
-import "./index.scss";
 import "normalize.css"
-import createMenu from './components/menu/menu';
-var menu = createMenu(['Главная','Обо мне','Портфолио'], 'menu');
-document.body.appendChild(menu);
-
+import "./components/avatar/avatar"
 console.log("in index.js");

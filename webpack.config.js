@@ -32,7 +32,6 @@ const common = merge([
   images()
 ]);
 
-
 module.exports = function(env) {
   if (env === "production") {
     return merge([common, miniExtractCSS()]);

@@ -1,0 +1,10 @@
+-
+    const NAME = 'AVATAR_NAME'
+    const SURNAME = 'AVATAR_SURNAME'
+    const DESCRIPTION = 'AVATAR_DESCRIPTION'
+
+div(class="avatar avatar__wrap")
+    div(class="photo photo__wrap")
+    span(class="title_thin avatar__title_thin") #{name || NAME}
+    span(class= "title_thick avatar__title_thick") #{surname || SURNAME}
+    span(class="desc-text") #{descr || DESCRIPTION}
