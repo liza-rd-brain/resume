@@ -1,36 +1,4 @@
-/* 
-.resume-img {
-    width: 148px;
-    height: 143px;
-    margin-right: 43px;
-  }
-  
-  .resume-title {
-    display: flex;
-    align-items: center;
-    margin-bottom: 64px;
-  }
-  
-  .resume-title__text {
-    color: #3d6cb0;
-    font-family: "Myriad Pro";
-    font-size: 82px;
-    font-weight: 700;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-  }
-  
-  .resume-title__text::after {
-    content: "";
-    display: block;
-    width: 623px;
-    height: 11px;
-    background-color: #3d6cb0;
-    margin-left: 21px;
-  } */
-  
-/*   .education-item {
+.education-item {
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -38,7 +6,7 @@
     margin-bottom: 41px;
   }
   
-  .education-item::before {
+ .education-item::before {
     content: "";
     display: block;
     position: absolute;
@@ -81,4 +49,4 @@
     font-weight: 400;
     margin: 0;
   }
-   */
+  

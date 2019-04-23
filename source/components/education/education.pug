@@ -1,15 +1,8 @@
 include ../title/title.pug
+include ../item/item.pug
+
 
 div(class ="resume-item education")
-    +title("images/education_icon.png",'EDUCATION')
-    
-
-    div(class="education-item")      
-        span(class="education-item__title_weight-bold") MASTER DEGREE
-        span(class="education-item__title_weight-thin") //Feb 2011 - Jun 2014
-        span(class="education-item__title_weight-standart") UNIVERSITY NAME
-        p(class="education-item_text") Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            Donec quam felis, ultricies nec, pellentesque.
-
+    +title(require("./components/education/education_icon.png"), "EDUCATION")
+- for (var x = 0; x < 4; x++)
+    +item

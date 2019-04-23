@@ -8,6 +8,7 @@ const sass = require("./webpack/sass");
 const css = require("./webpack/css");
 const miniExtractCSS = require("./webpack/css.miniExtract");
 const images = require("./webpack/images");
+//const fonts = require("./webpack/fonts")
 
 const PATHS = {
   source: path.join(__dirname, "source"),
@@ -19,7 +20,7 @@ const common = merge([
     entry: PATHS.source + "/index.js",
     output: {
       path: PATHS.build,
-      filename: "index.js"
+      filename: "js/index.js"
     },
     plugins: [
       new HtmlWebpackPlugin({
@@ -29,7 +30,8 @@ const common = merge([
     ]
   },
   pug(),
-  images()
+  images(),
+  //fonts()
 ]);
 
 module.exports = function(env) {
