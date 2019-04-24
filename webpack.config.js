@@ -1,14 +1,7 @@
 const path = require("path");
-const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const merge = require("webpack-merge");
-const pug = require("./webpack/pug");
-const devserver = require("./webpack/devserver");
-const sass = require("./webpack/sass");
-const css = require("./webpack/css");
-const miniExtractCSS = require("./webpack/css.miniExtract");
-const images = require("./webpack/images");
-//const fonts = require("./webpack/fonts")
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const PATHS = {
   source: path.join(__dirname, "source"),
@@ -27,18 +20,86 @@ const common = merge([
         filename: "index.html",
         template: PATHS.source + "/index.pug"
       })
-    ]
-  },
-  pug(),
-  images(),
-  //fonts()
+    ],
+    module: {
+      rules: [
+        {
+          test: /\.pug$/,
+          loader: "pug-loader",
+          options: {
+            pretty: true
+          }
+        },
+        {
+          test: /\.(jpg|png|svg)$/,
+          loader: "file-loader",
+          options: {
+            name: "images/[name].[ext]"
+          }
+        },
+        {
+          test: /\.(woff|woff2|ttf|otf)$/,
+          exclude: /fonts/,
+          use: ["file-loader"]
+        }
+      ]
+    }
+  }
+]);
+
+const production = merge([
+  {
+    module: {
+      rules: [
+        {
+          test: /\.scss$/,
+          use: [
+            {
+              loader: MiniCssExtractPlugin.loader,
+              options: {
+                publicPath: "../"
+              }
+            },
+            "css-loader",
+            "sass-loader"
+          ]
+        },
+        {
+          test: /\.css$/,
+          use: [MiniCssExtractPlugin.loader, "css-loader"]
+        }
+      ]
+    },
+    plugins: [new MiniCssExtractPlugin({ filename: "./css/[name].css" })]
+  }
+]);
+
+const development = merge([
+  {
+    devServer: {
+      stats: "errors-only",
+      port: 9100
+    },
+    module: {
+      rules: [
+        {
+          test: /\.css$/,
+          use: ["style-loader", "css-loader"]
+        },
+        {
+          test: /\.scss$/,
+          use: ["style-loader", "css-loader", "sass-loader"]
+        }
+      ]
+    }
+  }
 ]);
 
 module.exports = function(env) {
   if (env === "production") {
-    return merge([common, miniExtractCSS()]);
+    return merge([common, production]);
   }
   if (env === "development") {
-    return merge([common, devserver(), sass(), css()]);
+    return merge([common, development]);
   }
 };
