@@ -33,13 +33,13 @@ const common = merge([
         {
           test: /\.(jpg|png|svg)$/,
           loader: "file-loader",
+          exclude: /fonts/,
           options: {
             name: "images/[name].[ext]"
           }
         },
         {
-          test: /\.(woff|woff2|ttf|otf)$/,
-          exclude: /fonts/,
+          test: /\.(woff|svg|ttf)$/,
           use: ["file-loader"]
         }
       ]

@@ -1,10 +1,14 @@
--
-    const NAME = 'AVATAR_NAME'
-    const SURNAME = 'AVATAR_SURNAME'
-    const DESCRIPTION = 'AVATAR_DESCRIPTION'
 
-div(class="avatar avatar__wrap")
-    div(class="photo photo__wrap")
-    span(class="title_thin avatar__title_thin") #{name || NAME}
-    span(class= "title_thick avatar__title_thick") #{surname || SURNAME}
-    span(class="desc-text") #{descr || DESCRIPTION}
+-
+    const NAME = 'Name Here'
+    const SURNAME = 'SURNAME'
+    const DESCRIPTION = 'GRAPHIC DESIGNER'
+
+div(class="avatar column__avatar")
+    div(class="photo avatar__photo")
+    span(class="title_name avatar__title_name") #{name || NAME}
+    span(class= "title_surname avatar__title_surname") #{surname || SURNAME}
+    span(class="title_desc") #{descr || DESCRIPTION}
+
+
+

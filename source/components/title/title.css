@@ -13,12 +13,13 @@
   
   .resume-title__text {
     color: #3d6cb0;
-    font-family: "Myriad Pro";
+    font-family: "MyriadPro-Regular","Arial", sans-serif;
     font-size: 82px;
     font-weight: 700;
     text-transform: uppercase;
     display: flex;
     align-items: center;
+    margin:0;
   }
   
   .resume-title__text::after {

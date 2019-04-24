@@ -1,0 +1,62 @@
+@font-face {
+  font-family: MyraidPro-Bold;
+  src: url(./fonts/MyriadPro-Bold.svg) format("svg"),
+    url(./fonts/MyriadPro-Bold.ttf) format("ttf"),
+    url(./fonts/MyriadPro-Bold.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: MyriadPro-LightSemiExt;
+  src: url(./fonts/MyriadPro-LightSemiExt.svg) format("svg"),
+    url(./fonts/MyriadPro-LightSemiExt.ttf) format("ttf"),
+    url(./fonts/MyriadPro-LightSemiExt.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: MyriadPro-Regular;
+  src: url(./fonts/MyriadPro-Regular.svg) format("svg"),
+    url(./fonts/MyriadPro-Regular.ttf) format("ttf"),
+    url(./fonts/MyriadPro-Regular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container {
+  width: 2480px;
+  /* margin: 0 auto; */
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  &__column {
+    margin-top: 152px;
+    &_left {
+      margin-left: 121px;
+    }
+    &_right {
+      margin-right: 115px;
+    }
+  }
+}
+.column {
+  display: flex;
+  &_left {
+    width: 33.346%;
+  }
+  &_right {
+    width: 50.241%;
+  }
+  &__avatar {
+    padding: 50px 125px 0 154px;
+    box-sizing: border-box;
+   /*  margin-top: 54px;
+    margin-left: 154px; */
+  }
+}
+
+* {
+  border: 1px solid rgb(228, 207, 16);
+}

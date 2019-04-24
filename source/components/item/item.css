@@ -20,7 +20,7 @@
   
   .education-item__title_weight-bold {
     color: #3d6cb0;
-    font-family: "Myriad Pro";
+    font-family: "MyriadPro-Regular","Arial", sans-serif;
     font-size: 51px;
     font-weight: 700;
     text-transform: uppercase;
@@ -28,14 +28,14 @@
   
   .education-item__title_weight-thin {
     color: #020202;
-    font-family: "Myriad Pro";
+    font-family: "MyriadPro-Regular","Arial", sans-serif;
     font-size: 51px;
     font-weight: 400;
   }
   
   .education-item__title_weight-standart {
     color: #000000;
-    font-family: "Myriad Pro";
+    font-family: "MyriadPro-Regular","Arial", sans-serif;
     font-size: 51px;
     font-weight: 400;
     text-transform: uppercase;
@@ -44,7 +44,7 @@
   
   .education-item_text {
     color: #000000;
-    font-family: "Myriad Pro";
+    font-family: "MyriadPro-Regular","Arial", sans-serif;
     font-size: 31px;
     font-weight: 400;
     margin: 0;

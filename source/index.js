@@ -1,5 +1,5 @@
 import "normalize.css"
 import "./components/avatar/avatar"
 import "./components/education/education"
-import "./index.css"
+import "./index.scss"
 console.log("in index.js");

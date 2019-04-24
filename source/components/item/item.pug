@@ -1,9 +1,6 @@
-mixin item
+mixin item(item_title, item_period, item_desc, item_text)
     div(class="education-item")      
-        span(class="education-item__title_weight-bold") MASTER DEGREE
-        span(class="education-item__title_weight-thin") //Feb 2011 - Jun 2014
-        span(class="education-item__title_weight-standart") UNIVERSITY NAME
-        p(class="education-item_text") Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            Donec quam felis, ultricies nec, pellentesque.
+        span(class="education-item__title_weight-bold") #{item_title} 
+        span(class="education-item__title_weight-thin") #{item_period}
+        span(class="education-item__title_weight-standart") #{item_desc}
+        p(class="education-item_text") #{item_text}
