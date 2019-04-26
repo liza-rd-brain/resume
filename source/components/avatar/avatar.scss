@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  &__wrap {
+    padding: 54px 125px 0 154px;
+    box-sizing: border-box;
+  }
   &__photo {
     position: relative;
     margin-bottom: 104px;

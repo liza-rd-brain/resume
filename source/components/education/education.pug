@@ -26,5 +26,5 @@ include ../item/item.pug
 
 div(class ="resume-item education")
     +title(src||SRC, title_name||TITLE_NAME)
-- for (var i = 0; i < 4; i++)
-    +item(ITEM[i].ITEM_TITLE,ITEM[i].ITEM_PERIOD,ITEM[i].ITEM_DESC,ITEM[i].ITEM_TEXT)
+    - for (var i = 0; i < 4; i++)
+        +item(ITEM[i].ITEM_TITLE,ITEM[i].ITEM_PERIOD,ITEM[i].ITEM_DESC,ITEM[i].ITEM_TEXT)

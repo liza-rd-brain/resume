@@ -32,7 +32,7 @@
   display: flex;
   justify-content: space-between;
   &__column {
-    margin-top: 152px;
+    margin-top: 146px;
     &_left {
       margin-left: 121px;
     }
@@ -48,12 +48,6 @@
   }
   &_right {
     width: 50.241%;
-  }
-  &__avatar {
-    padding: 50px 125px 0 154px;
-    box-sizing: border-box;
-   /*  margin-top: 54px;
-    margin-left: 154px; */
   }
 }
 
