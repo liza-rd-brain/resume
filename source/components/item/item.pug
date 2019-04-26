@@ -1,6 +1,6 @@
 mixin item(item_title, item_period, item_desc, item_text)
-    div(class="education-item")      
-        span(class="education-item__title_weight-bold") #{item_title} 
-        span(class="education-item__title_weight-thin") #{item_period}
-        span(class="education-item__title_weight-standart") #{item_desc}
-        p(class="education-item_text") #{item_text}
+    li(class="item")      
+        span(class="item__title_name") #{item_title} 
+        span(class="item__title_period") #{item_period}
+        span(class="item__title_desc") #{item_desc}
+        p(class="item__text") #{item_text}

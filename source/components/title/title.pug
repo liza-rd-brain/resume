@@ -1,7 +1,8 @@
-mixin title(src, title_name)
-    div(class="resume-title")
+mixin title(src, title_name,alt,width,height,img_class)
+    div(class="title")
         img(src=src
-            alt="education_icon"
-            width="148"
-            height="143")
-        h2(class="resume-title__text") #{title_name} 
+            alt=alt 
+            width=width
+            height=height
+            class=img_class)
+        h2(class="title__text") #{title_name} 

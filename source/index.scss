@@ -32,25 +32,19 @@
   display: flex;
   justify-content: space-between;
   &__column {
-    margin-top: 146px;
+    margin-top: 152px;
     &_left {
       margin-left: 121px;
+      width: 33.346%;
     }
     &_right {
       margin-right: 115px;
+      width: 51%;
     }
   }
 }
-.column {
-  display: flex;
-  &_left {
-    width: 33.346%;
-  }
-  &_right {
-    width: 50.241%;
-  }
-}
+
 
 * {
-  border: 1px solid rgb(228, 207, 16);
+  outline: 1px solid rgb(228, 207, 16);
 }

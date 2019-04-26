@@ -1,0 +1,56 @@
+%item-title {
+  font-family: "MyriadPro-Regular", "Arial", sans-serif;
+  font-size: 51px;
+  font-weight: 400;
+  display: block;
+  line-height: 0.75;
+}
+
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  //не нравится что задаю позиционирование у блока!
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #000;
+    border-radius: 50%;
+    left: -82px;
+    top: 0px;
+  }
+
+  &__title {
+    &_name {
+      @extend %item-title;
+      color: #3d6cb0;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      margin: 0 27px 32px 0;
+    }
+    &_period {
+      @extend %item-title;
+      color: #020202;
+    }
+    &_desc {
+      @extend %item-title;
+      color: #000000;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+      width: 100%;
+    }
+  }
+
+  &__text {
+    @extend %item-title;
+    color: #000000;
+    font-size: 31px;
+    font-weight: 400;
+    margin: 0 0 36px 0;
+    line-height: normal;
+  }
+}

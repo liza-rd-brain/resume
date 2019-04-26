@@ -1,1 +1,1 @@
-import "./title.css"
+import "./title.scss"

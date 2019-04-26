@@ -2,34 +2,34 @@ include ../title/title.pug
 include ../item/item.pug
 
 -
-    const ED_SRC = require("./components/education/education_icon.png")
-    const ED_TITLE_NAME = "EDUCATION"
-    const ED_ALT="education_icon"
-    const ED_WIDTH="148"
-    const ED_HEIGHT="143"
-    const ED_IMG_CLASS ="title__img"
+    const EX_SRC = require("./components/experience/experience_icon.png")
+    const EX_TITLE_NAME = "EXPERIENCE"
+    const EX_ALT="experience_icon"
+    const EX_WIDTH="148"
+    const EX_HEIGHT="143"
+    const EX_IMG_CLASS ="title__img"
 
-    const ED_ITEM = [
-        {ITEM_TITLE :"MASTER DEG",ITEM_PERIOD: "// Feb 2011 - Jun 2014",
-         ITEM_DESC:"UNIVERSITY NAME",
+    const EX_ITEM = [
+        {ITEM_TITLE :"COMPANY NAME",ITEM_PERIOD: "// Feb 2011 - Jun 2014",
+         ITEM_DESC:"YOUR JOB HERE",
          ITEM_TEXT:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."
          },
-         {ITEM_TITLE :"MASTER DEG",ITEM_PERIOD: "// Feb 2011 - Jun 2014",
-         ITEM_DESC:"UNIVERSITY NAME",
+         {ITEM_TITLE :"COMPANY NAME",ITEM_PERIOD: "// Feb 2011 - Jun 2014",
+         ITEM_DESC:"YOUR JOB HERE",
          ITEM_TEXT:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."
          },
-         {ITEM_TITLE :"MASTER DEG",ITEM_PERIOD: "// Feb 2011 - Jun 2014",
-         ITEM_DESC:"UNIVERSITY NAME",
+         {ITEM_TITLE :"COMPANY NAME",ITEM_PERIOD: "// Feb 2011 - Jun 2014",
+         ITEM_DESC:"YOUR JOB HERE",
          ITEM_TEXT:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."
          },
-         {ITEM_TITLE :"MASTER DEG",ITEM_PERIOD: "// Feb 2011 - Jun 2014",
-         ITEM_DESC:"UNIVERSITY NAME",
+         {ITEM_TITLE :"COMPANY NAME",ITEM_PERIOD: "// Feb 2011 - Jun 2014",
+         ITEM_DESC:"YOUR JOB HERE",
          ITEM_TEXT:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."
          },
     ]
 
-div(class ="education")
-    +title(src||ED_SRC, title_name||ED_TITLE_NAME,alt||ED_ALT,width||ED_WIDTH, height||ED_HEIGHT,img_class||ED_IMG_CLASS)
-    ul(class="education__list")
-        - for (var i = 0; i < 4; i++)
-            +item(ED_ITEM[i].ITEM_TITLE,ED_ITEM[i].ITEM_PERIOD,ED_ITEM[i].ITEM_DESC,ED_ITEM[i].ITEM_TEXT)
+div(class ="experience")
+    +title(src||EX_SRC, title_name||EX_TITLE_NAME,alt||EX_ALT,width||EX_WIDTH, height||EX_HEIGHT,img_class||EX_IMG_CLASS)
+    ul(class="experience__list")
+        - for (var i = 0; i < 3; i++)
+            +item(EX_ITEM[i].ITEM_TITLE,EX_ITEM[i].ITEM_PERIOD,EX_ITEM[i].ITEM_DESC,EX_ITEM[i].ITEM_TEXT)

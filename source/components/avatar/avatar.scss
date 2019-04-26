@@ -13,6 +13,7 @@
     height: 405px;
     background-color: #3d6cb0;
     border-radius: 50%;
+    margin-left: 4px;
     &:after {
       position: absolute;
       content: "";
@@ -47,7 +48,7 @@
     font-family: "MyriadPro-Regular", "Arial", sans-serif;
     font-size: 123px;
     font-weight: 700;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
     letter-spacing: 6px;
   }
   &_desc {
