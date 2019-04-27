@@ -1,5 +1,6 @@
+
 mixin title(src, title_name,alt,width,height,img_class)
-    div(class="title")
+    div(class="title")(class!=attributes.class)
         img(src=src
             alt=alt 
             width=width

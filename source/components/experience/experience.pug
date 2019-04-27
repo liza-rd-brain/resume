@@ -2,12 +2,14 @@ include ../title/title.pug
 include ../item/item.pug
 
 -
+    const EX_TITLE_ClASS = "experience__title"
     const EX_SRC = require("./components/experience/experience_icon.png")
     const EX_TITLE_NAME = "EXPERIENCE"
     const EX_ALT="experience_icon"
-    const EX_WIDTH="148"
-    const EX_HEIGHT="143"
-    const EX_IMG_CLASS ="title__img"
+    const EX_WIDTH="153"
+    const EX_HEIGHT="148"
+    const EX_IMG_CLASS ="experience__img"
+    const EX_NAME_CLASS="item__title_black"
 
     const EX_ITEM = [
         {ITEM_TITLE :"COMPANY NAME",ITEM_PERIOD: "// Feb 2011 - Jun 2014",
@@ -29,7 +31,7 @@ include ../item/item.pug
     ]
 
 div(class ="experience")
-    +title(src||EX_SRC, title_name||EX_TITLE_NAME,alt||EX_ALT,width||EX_WIDTH, height||EX_HEIGHT,img_class||EX_IMG_CLASS)
+    +title(src||EX_SRC, title_name||EX_TITLE_NAME,alt||EX_ALT,width||EX_WIDTH, height||EX_HEIGHT,img_class||EX_IMG_CLASS)(class=title_class||EX_TITLE_ClASS)
     ul(class="experience__list")
         - for (var i = 0; i < 3; i++)
-            +item(EX_ITEM[i].ITEM_TITLE,EX_ITEM[i].ITEM_PERIOD,EX_ITEM[i].ITEM_DESC,EX_ITEM[i].ITEM_TEXT)
+            +item(EX_ITEM[i].ITEM_TITLE,EX_ITEM[i].ITEM_PERIOD,EX_ITEM[i].ITEM_DESC,EX_ITEM[i].ITEM_TEXT)(class=EX_NAME_CLASS)

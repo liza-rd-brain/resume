@@ -1,3 +1,12 @@
+@import "../../variables";
+
+@mixin text($family, $size, $weight, $margin) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+  margin-bottom: $margin;
+}
+
 .avatar {
   display: flex;
   flex-direction: column;
@@ -11,16 +20,17 @@
     margin-bottom: 104px;
     width: 405px;
     height: 405px;
-    background-color: #3d6cb0;
+    background-color: $blue;
     border-radius: 50%;
     margin-left: 4px;
+
     &:after {
       position: absolute;
       content: "";
       display: block;
       width: 465px;
       height: 465px;
-      border: 2px solid #3d6cb0;
+      border: 2px solid $blue;
       border-radius: 50%;
       top: -30px;
       right: -30px;
@@ -29,33 +39,18 @@
   }
 }
 
-%avatar-title {
+.avatar__title {
   display: block;
-  color: #000000;
+  color: $black;
   text-transform: uppercase;
   line-height: 0.7;
-}
-.avatar__title {
   &_name {
-    @extend %avatar-title;
-    font-family: "MyriadPro-LightSemiExt", "Arial", sans-serif;
-    font-size: 104px;
-    font-weight: 400;
-    margin-bottom: 26px;
+    @include text($font-light, 104px, 400, 26px);
   }
   &_surname {
-    @extend %avatar-title;
-    font-family: "MyriadPro-Regular", "Arial", sans-serif;
-    font-size: 123px;
-    font-weight: 700;
-    margin-bottom: 45px;
-    letter-spacing: 6px;
+    @include text($font-bold, 123px, 700, 45px);
   }
   &_desc {
-    @extend %avatar-title;
-    font-family: "MyriadPro-Regular", "Arial", sans-serif;
-    font-size: 50px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
+    @include text($font-bold, 50px, 700, 0);
   }
 }

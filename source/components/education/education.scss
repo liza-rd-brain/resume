@@ -1,5 +1,15 @@
-.education__list {
+.education {
+  &__list {
     margin: 0;
     padding-left: 107px;
-}
+  }
+  &__title {
+    margin-bottom: 64px;
+  }
+  &__img {
+    width: 148px;
+    height: 143px;
+    margin-right: 40px;
+  }
   
+}

@@ -1,16 +1,20 @@
-%item-title {
-  font-family: "MyriadPro-Regular", "Arial", sans-serif;
-  font-size: 51px;
-  font-weight: 400;
-  display: block;
-  line-height: 0.75;
+@import "../../variables";
+
+@mixin text($family, $size, $weight, $margin, $color) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+  margin: $margin;
+  color: $color;
 }
 
 .item {
   display: flex;
   flex-wrap: wrap;
-  //не нравится что задаю позиционирование у блока!
-  position: relative;
+  &__wrap {
+    position: relative;
+    height: 273px;
+  }
   &::before {
     content: "";
     display: block;
@@ -22,35 +26,28 @@
     left: -82px;
     top: 0px;
   }
-
-  &__title {
-    &_name {
-      @extend %item-title;
-      color: #3d6cb0;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 2.5px;
-      margin: 0 27px 32px 0;
-    }
-    &_period {
-      @extend %item-title;
-      color: #020202;
-    }
-    &_desc {
-      @extend %item-title;
-      color: #000000;
-      text-transform: uppercase;
-      margin-bottom: 18px;
-      width: 100%;
-    }
-  }
-
   &__text {
-    @extend %item-title;
-    color: #000000;
-    font-size: 31px;
-    font-weight: 400;
-    margin: 0 0 36px 0;
-    line-height: normal;
+    display: block;
+    @include text($font-regular, 31px,400, 0 0 36px 0, $black);
+  }
+}
+
+.item__title {
+  display: block;
+  line-height: 0.75;
+  text-transform: uppercase;
+  &_name {
+    @include text($font-bold, 51px, 700, 0 33px 32px 0, $blue);
+  }
+  &_period {
+    @include text($font-regular, 51px, 400, 0, $black-light);
+    text-transform: none;
+  }
+  &_desc {
+    @include text($font-regular, 51px, 400, 0 0 18px 0, $black);
+    width: 100%;
+  }
+  &_black{
+    color:$black;
   }
 }

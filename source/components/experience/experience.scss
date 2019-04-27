@@ -1,4 +1,14 @@
-.experience__list {
+.experience {
+  &__list {
     margin: 0;
     padding-left: 107px;
+  }
+  &__title  {
+    margin-bottom: 94px;
+  }
+  &__img {
+    width: 153px;
+    height: 148px;
+    margin-right: 35px;
+  }
 }

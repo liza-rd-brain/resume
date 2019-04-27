@@ -1,6 +1,10 @@
 import "normalize.css"
 import "./components/avatar/avatar"
+import "./components/profile/profile"
 import "./components/education/education"
 import "./components/experience/experience"
+import "./components/profile/profile"
 import "./index.scss"
+import "./_variables.scss"
+
 console.log("in index.js");

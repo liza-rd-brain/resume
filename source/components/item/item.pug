@@ -1,6 +1,6 @@
-mixin item(item_title, item_period, item_desc, item_text)
-    li(class="item")      
-        span(class="item__title_name") #{item_title} 
-        span(class="item__title_period") #{item_period}
-        span(class="item__title_desc") #{item_desc}
+mixin item(item_name, item_period, item_desc, item_text)
+    li(class="item item__wrap")     
+        span(class="item__title item__title_name")(class!=attributes.class) #{item_name} 
+        span(class="item__title item__title_period") #{item_period}
+        span(class="item__title item__title_desc") #{item_desc}
         p(class="item__text") #{item_text}
