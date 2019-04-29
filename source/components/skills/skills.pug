@@ -1,0 +1,25 @@
+include ../title/title.pug
+include ../progressbar/progressbar.pug
+
+-
+    const SK_TITLE_ClASS = "skills__title"
+    const SK_SRC = require("./components/skills/skills_icon.png")
+    const SK_TITLE_NAME = "SKILLS"
+    const SK_ALT="skills_icon"
+    const SK_WIDTH="143"
+    const SK_HEIGHT="143"
+    const SK_IMG_CLASS ="skills__img"
+    const SK_ITEM_MAX=643
+
+    const SK_ITEM =[
+
+        {ITEM_NAME:"CREATIVE",ITEM_VALUE:404},
+        {ITEM_NAME:"TEAMWORK",ITEM_VALUE:461},
+        {ITEM_NAME:"INNOVATE",ITEM_VALUE:391},
+        {ITEM_NAME:"COMMUNICATION",ITEM_VALUE:342},
+    ] 
+
+
+
+div(class="skills skills__software")
+    +title(src||SK_SRC, title_name||SK_TITLE_NAME,alt||SK_ALT,width||SK_WIDTH, height||SK_HEIGHT,img_class||SK_IMG_CLASS)(class=title_class||SK_TITLE_ClASS)

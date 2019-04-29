@@ -1,0 +1,35 @@
+@import "../../variables";
+
+.contact {
+  &__img {
+    width: 143px;
+    height: 143px;
+    margin-right: 40px;
+  }
+  &__title {
+    margin-bottom: 64px;
+  }
+  &__item {
+    margin-bottom: 81px;
+  }
+  &__name {
+    color: $blue;
+    font-family: $font-bold;
+    font-size: 41px;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+  }
+
+  &__value {
+    color: $black;
+    font-family: $font-regular;
+    font-size: 41px;
+    font-weight: 400;
+    margin-left: 20px;
+    position: absolute;
+    left: 376px;
+  }
+
+ 
+}

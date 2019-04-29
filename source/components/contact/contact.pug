@@ -1,0 +1,26 @@
+include ../title/title.pug
+
+-
+    const CO_TITLE_ClASS = "contact__title"
+    const CO_SRC = require("./components/contact/contact_icon.png")
+    const CO_TITLE_NAME = "CONTACT"
+    const CO_ALT="contact_icon"
+    const CO_WIDTH="143"
+    const CO_HEIGHT="143"
+    const CO_IMG_CLASS ="contact__img"
+
+
+    const CO_ITEM = [
+        {ITEM_NAME:"ADDRESS",ITEM_VALUE:"Main Street, City."},
+        {ITEM_NAME:"E-MAIL",ITEM_VALUE:"contact@domain.com"},
+        {ITEM_NAME:"PHONE",ITEM_VALUE:"555-555-555"},
+        {ITEM_NAME:"WEBSITE",ITEM_VALUE:"www.yourweb.com"},
+    ] 
+
+div(class="contact container__contact")
+    +title(src||CO_SRC, title_name||CO_TITLE_NAME,alt||CO_ALT,width||CO_WIDTH, height||CO_HEIGHT,img_class||CO_IMG_CLASS)(class=title_class||CO_TITLE_ClASS)
+    - for (var i = 0; i < 4; i++)
+        div(class="contact__item")
+                span(class="contact__name") #{CO_ITEM[i].ITEM_NAME}
+                span(class="contact__value") #{CO_ITEM[i].ITEM_VALUE}
+
