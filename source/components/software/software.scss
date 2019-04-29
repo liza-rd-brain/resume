@@ -1,0 +1,16 @@
+.software{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.software {
+  &__img {
+    width: 148px;
+    height: 143px;
+    margin-right: 41px;
+  }
+  &__title {
+    margin-bottom: 64px;
+    width: 100%;
+  }
+}

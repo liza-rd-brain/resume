@@ -9,9 +9,9 @@
 
 .profile {
   &__img {
-    width: 143px;
+    width: 148px;
     height: 143px;
-    margin-right: 35px;
+    margin-right: 19px;
   }
   &__title {
     margin-bottom: 30px;
@@ -20,6 +20,9 @@
   &__text {
     display: block;
     @include text($font-regular, 31px, 400, 0);
+    min-height: 472px;
+    line-height: 1.2;
+    letter-spacing: -0.1px;
   }
 
   &__span {

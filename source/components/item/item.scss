@@ -13,7 +13,7 @@
   flex-wrap: wrap;
   &__wrap {
     position: relative;
-    height: 273px;
+    min-height: 273px;
   }
   &::before {
     content: "";

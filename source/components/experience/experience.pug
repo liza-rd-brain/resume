@@ -30,7 +30,7 @@ include ../item/item.pug
          },
     ]
 
-div(class ="experience")
+div(class ="experience container__experience")
     +title(src||EX_SRC, title_name||EX_TITLE_NAME,alt||EX_ALT,width||EX_WIDTH, height||EX_HEIGHT,img_class||EX_IMG_CLASS)(class=title_class||EX_TITLE_ClASS)
     ul(class="experience__list")
         - for (var i = 0; i < 3; i++)

@@ -1,0 +1,28 @@
+include ../title/title.pug
+include ../progressbar/progressbar.pug
+
+-
+    const SO_TITLE_ClASS = "software__title"
+    const SO_SRC = require("./components/software/software_icon.png")
+    const SO_TITLE_NAME = "SOFTWARE"
+    const SO_ALT="software_icon"
+    const SO_WIDTH="148"
+    const SO_HEIGHT="143"
+    const SO_IMG_CLASS ="software__img"
+    const SO_ITEM_MAX=554
+
+    const SO_ITEM =[
+        {ITEM_NAME:"PHOTOSHOP",ITEM_VALUE:505},
+        {ITEM_NAME:"DREAMWEAVER",ITEM_VALUE:461},
+        {ITEM_NAME:"ILLUSTRATOR",ITEM_VALUE:391},
+        {ITEM_NAME:"AFTER EFFECTS",ITEM_VALUE:342},
+        {ITEM_NAME:"INDESIGN",ITEM_VALUE:312},
+        {ITEM_NAME:"HTML&CSS3",ITEM_VALUE:505}
+    ] 
+
+
+
+div(class="software container__software")
+    +title(src||SO_SRC, title_name||SO_TITLE_NAME,alt||SO_ALT,width||SO_WIDTH, height||SO_HEIGHT,img_class||SO_IMG_CLASS)(class=title_class||SO_TITLE_ClASS)
+    - for (var i = 0; i < 6; i++)
+        +progressbar(SO_ITEM[i].ITEM_NAME,SO_ITEM_MAX,SO_ITEM[i].ITEM_VALUE)
