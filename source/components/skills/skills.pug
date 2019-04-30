@@ -1,5 +1,6 @@
 include ../title/title.pug
-include ../progressbar/progressbar.pug
+include ../progressdot/progressdot.pug
+
 
 -
     const SK_TITLE_ClASS = "skills__title"
@@ -12,7 +13,6 @@ include ../progressbar/progressbar.pug
     const SK_ITEM_MAX=12
 
     const SK_ITEM =[
-
         {ITEM_NAME:"CREATIVE",ITEM_VALUE:9},
         {ITEM_NAME:"TEAMWORK",ITEM_VALUE:11},
         {ITEM_NAME:"INNOVATE",ITEM_VALUE:6},
@@ -24,4 +24,6 @@ include ../progressbar/progressbar.pug
 div(class="skills skills__software")
     +title(src||SK_SRC, title_name||SK_TITLE_NAME,alt||SK_ALT,width||SK_WIDTH, height||SK_HEIGHT,img_class||SK_IMG_CLASS)(class=title_class||SK_TITLE_ClASS)
     - for (var i = 0; i < 4; i++)
-        +progressbar(SK_ITEM[i].ITEM_NAME,SK_ITEM_MAX,SK_ITEM[i].ITEM_VALUE)(class="progressbar__progress_dott")
+        +progressdot(SK_ITEM[i].ITEM_NAME,SK_ITEM_MAX,SK_ITEM[i].ITEM_VALUE)
+
+        
