@@ -4,5 +4,5 @@ mixin progressbar(progress_name, progress_max, progress_value)
         span(class="progressbar__title") #{progress_name}
         progress(class="progressbar__progress"
                      max=progress_max 
-                     value=progress_value) 
+                     value=progress_value)(class!=attributes.class)
 

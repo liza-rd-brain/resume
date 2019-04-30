@@ -40,3 +40,33 @@ $progress-value: $blue;
     background-color: $progress-value;
   }
 }
+
+
+.progressbar__progress_dott {
+  background-color: $progress-bar;
+  width: 554px;
+  height: 46px;
+  display: table;
+
+  &::-webkit-progress-bar {
+    background-color: $progress-bar;
+    /* display: table; */
+  }
+  &::-webkit-progress-value {
+    background-color: $progress-value;
+    /* display: table-cell; */
+    position: relative;
+    border-radius: 50px;
+    counter-reset: section;
+    
+   
+  }
+  &::-moz-progress-bar {
+    background-color: $progress-value;
+    /* display: table-cell; */
+    position: relative;
+    border-radius: 50%;
+    counter-reset: section;
+
+  }
+}
