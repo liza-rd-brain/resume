@@ -9,6 +9,7 @@ const PATHS = {
 };
 
 const common = merge([
+
   {
     entry: PATHS.source + "/index.js",
     output: {

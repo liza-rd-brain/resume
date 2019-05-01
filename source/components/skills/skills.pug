@@ -1,7 +1,6 @@
 include ../title/title.pug
 include ../progressdot/progressdot.pug
 
-
 -
     const SK_TITLE_ClASS = "skills__title"
     const SK_SRC = require("./components/skills/skills_icon.png")
@@ -21,9 +20,9 @@ include ../progressdot/progressdot.pug
 
 
 
-div(class="skills skills__software")
+div(class="skills container__skills")
     +title(src||SK_SRC, title_name||SK_TITLE_NAME,alt||SK_ALT,width||SK_WIDTH, height||SK_HEIGHT,img_class||SK_IMG_CLASS)(class=title_class||SK_TITLE_ClASS)
     - for (var i = 0; i < 4; i++)
         +progressdot(SK_ITEM[i].ITEM_NAME,SK_ITEM_MAX,SK_ITEM[i].ITEM_VALUE)
 
-        
+

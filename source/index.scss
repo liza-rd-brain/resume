@@ -27,45 +27,52 @@
 
 .container {
   width: 2480px;
-  /* margin: 0 auto; */
+  margin: 0 auto;
   background-color: #fff;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
+
   &__column {
     margin-top: 152px;
+    margin-bottom: 191px;
+
     &_left {
       margin-left: 121px;
       width: 33.346%;
     }
+
     &_right {
       margin-right: 115px;
       width: 51%;
     }
   }
-   &__avatar{
-     margin-bottom: 165px;
-   }
-   &__profile{
-    margin-bottom: 87px;
-   }
-   &__contact{
-    margin-bottom: 95px;
-   }
-   &__skills{
-    margin-bottom: 107px;
-   }
-   &__education{
-    margin-bottom: 69px;
-   }
-   &__experience{
-    margin-bottom: 74px;
-   }
-   
 
+  &__avatar {
+    margin-bottom: 165px;
+  }
+
+  &__profile {
+    margin-bottom: 87px;
+  }
+
+  &__contact {
+    margin-bottom: 95px;
+  }
+
+  &__skills {
+    margin-bottom: 107px;
+  }
+
+  &__education {
+    margin-bottom: 69px;
+  }
   
+  &__experience {
+    margin-bottom: 70px;
+  }
 }
 
-
+/* 
 * {
   outline: 1px solid rgb(228, 207, 16);
-}
+} */

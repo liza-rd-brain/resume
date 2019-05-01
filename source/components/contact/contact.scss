@@ -1,5 +1,12 @@
 @import "../../variables";
 
+@mixin text($family, $size, $weight, $color) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
 .contact {
   &__img {
     width: 143px;
@@ -15,23 +22,13 @@
     min-height: 37px;
   }
   &__name {
-    display: block;
-    color: $blue;
-    font-family: $font-bold;
-    font-size: 41px;
-    font-weight: 700;
+    @include text($font-bold, 41px, 700, $blue);
     text-transform: uppercase;
     width: 31%;
   }
 
   &__value {
-    display: block;
-    color: $black;
-    font-family: $font-regular;
-    font-size: 41px;
-    font-weight: 400;
-   
-  }
+    @include text($font-regular, 41px, 400, $black);
 
- 
+  }
 }

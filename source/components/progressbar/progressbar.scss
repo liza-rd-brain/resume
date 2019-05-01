@@ -3,13 +3,12 @@
 $progress-bar: $grey;
 $progress-value: $blue;
 
-.progressbar__wrap {
+.progressbar {
   display: flex;
   flex-wrap: wrap;
-  width: 43%;
-  margin-bottom: 25px;
-  padding-left:  10px;
+  width: 44%;
 }
+
 .progressbar__title {
   font-family: $font-regular;
   font-size: 51px;
@@ -17,18 +16,14 @@ $progress-value: $blue;
   color: $black;
   text-transform: uppercase;
   width: 100%;
-  margin-bottom: 35px;
- 
+  margin-bottom: 26px;
 }
-
-/* .progressbar__progress::-moz-progress-bar {
-  background-color: red;
-} */
 
 .progressbar__progress {
   background-color: $progress-bar;
   width: 554px;
   height: 46px;
+  border: none;
 
   &::-webkit-progress-bar {
     background-color: $progress-bar;

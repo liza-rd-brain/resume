@@ -1,16 +1,21 @@
-.software{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 .software {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
   &__img {
     width: 148px;
     height: 143px;
     margin-right: 41px;
   }
+
   &__title {
-    margin-bottom: 64px;
+    margin-bottom: 53px;
     width: 100%;
+  }
+
+  &__progressbar {
+    margin-bottom: 43px;
+    padding-left: 15px;
   }
 }

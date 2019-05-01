@@ -21,33 +21,35 @@
     position: absolute;
     width: 40px;
     height: 40px;
-    background: #000;
+    background:$black;
     border-radius: 50%;
     left: -82px;
     top: 0px;
   }
+  
   &__text {
     display: block;
     @include text($font-regular, 31px,400, 0 0 36px 0, $black);
   }
+
+  &__title {
+    display: block;
+    line-height: 0.75;
+    text-transform: uppercase;
+    &_name {
+      @include text($font-bold, 51px, 700, 0 33px 32px 0, $blue);
+    }
+    &_period {
+      @include text($font-regular, 51px, 400, 0, $black-light);
+      text-transform: none;
+    }
+    &_desc {
+      @include text($font-regular, 51px, 400, 0 0 18px 0, $black);
+      width: 100%;
+    }
+    &_black{
+      color:$black;
+    }
+  }
 }
 
-.item__title {
-  display: block;
-  line-height: 0.75;
-  text-transform: uppercase;
-  &_name {
-    @include text($font-bold, 51px, 700, 0 33px 32px 0, $blue);
-  }
-  &_period {
-    @include text($font-regular, 51px, 400, 0, $black-light);
-    text-transform: none;
-  }
-  &_desc {
-    @include text($font-regular, 51px, 400, 0 0 18px 0, $black);
-    width: 100%;
-  }
-  &_black{
-    color:$black;
-  }
-}

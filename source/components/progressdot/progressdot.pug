@@ -1,9 +1,12 @@
 
 mixin progressdot(progress_name, progress_max, progress_value)
-    div(class="progressdot__wrap")
+    div(class="progressdot skills__progressdot")
         span(class="progressdot__title") #{progress_name}
         div(class="progressdot__line")
             - for (var i = 0; i < progress_max ; i++)
-                div(class="progressdot__dot")
+            if i < progress_value
+                div(class="progressdot__dot progressdot__dot_marked")
+            else
+                div(class="progressdot__dot")  
         
 

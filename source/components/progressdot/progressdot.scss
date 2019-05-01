@@ -1,33 +1,37 @@
 @import "../../variables";
 
-$progress-line: $grey;
-$progress-value: $blue;
+$dot: $grey;
+$dot-marked: $blue;
 
-.progressdot__wrap {
+.progressdot {
   display: flex;
   flex-wrap: wrap;
   width: 78%;
-  margin-bottom: 25px;
   justify-content: center;
-}
-.progressdot__title {
-  font-family: $font-regular;
-  font-size: 51px;
-  font-weight: 400;
-  color: $black;
-  text-transform: uppercase;
-  margin-bottom: 35px;
-  width: 100%;
-  text-align: center;
-}
-.progressdot__line {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
 
-.progressdot__dot {
-  border: 18px solid $grey;
-  border-radius: 18px;
-}
+  &__title {
+    font-family: $font-regular;
+    font-size: 51px;
+    font-weight: 400;
+    color: $black;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    width: 100%;
+    text-align: center;
+  }
 
+  &__line {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__dot {
+    border: 18px solid $dot;
+    border-radius: 18px;
+
+    &_marked {
+      border-color: $dot-marked;
+    }
+  }
 }
