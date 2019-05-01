@@ -60,9 +60,6 @@ const production = merge([
           use: [
             {
               loader: MiniCssExtractPlugin.loader,
-              options: {
-                publicPath: "../"
-              }
             },
             "css-loader",
             "sass-loader"
