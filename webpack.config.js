@@ -14,7 +14,7 @@ const common = merge([
     entry: PATHS.source + "/index.js",
     output: {
       path: PATHS.build,
-      filename: "js/index.js"
+      filename: "index.js"
     },
     plugins: [
       new HtmlWebpackPlugin({
@@ -74,7 +74,7 @@ const production = merge([
         }
       ]
     },
-    plugins: [new MiniCssExtractPlugin({ filename: "./css/[name].css" })]
+    plugins: [new MiniCssExtractPlugin({ filename: "./[name].css" })]
   }
 ]);
 
