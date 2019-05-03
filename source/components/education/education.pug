@@ -32,5 +32,5 @@ include ../item/item.pug
 div(class ="education container__education")
     +title(src||ED_SRC, title_name||ED_TITLE_NAME,alt||ED_ALT,width||ED_WIDTH, height||ED_HEIGHT,img_class||ED_IMG_CLASS)(class=title_class||ED_TITLE_ClASS)
     ul(class="education__list")
-        - for (var i = 0; i < 4; i++)
+        - for (var i = 0; i < ED_ITEM.length; i++)
             +item(ED_ITEM[i].ITEM_NAME,ED_ITEM[i].ITEM_PERIOD,ED_ITEM[i].ITEM_DESC,ED_ITEM[i].ITEM_TEXT)
