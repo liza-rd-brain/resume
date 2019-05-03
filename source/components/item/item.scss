@@ -37,14 +37,14 @@
     line-height: 0.75;
     text-transform: uppercase;
     &_name {
-      @include text($font-bold, 51px, 700, 0 33px 32px 0, $blue);
+      @include text($font-bold, 4.25rem, 700, 0 33px 32px 0, $blue);
     }
     &_period {
-      @include text($font-regular, 51px, 400, 0, $black-light);
+      @include text($font-regular, 4.25rem, 400, 0, $black-light);
       text-transform: none;
     }
     &_desc {
-      @include text($font-regular, 51px, 400, 0 0 18px 0, $black);
+      @include text($font-regular, 4.25rem, 400, 0 0 18px 0, $black);
       width: 100%;
     }
     &_black{

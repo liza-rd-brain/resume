@@ -25,24 +25,41 @@
   font-style: normal;
 }
 
+
+html{
+font-size: 12px;
+}
+
 .container {
   width: 2480px;
+ /*  max-width: 1920px;
+  min-width: 320px; */
   margin: 0 auto;
   background-color: #fff;
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
+
+  /*@media (max-width: 1919.98px) {
+    width: 1920px;
+    overflow: hidden;
+  }*/
 
   &__column {
     margin-top: 152px;
     margin-bottom: 191px;
 
     &_left {
-      margin-left: 121px;
+       margin-left: 121px;
+      /* margin-left: 5%; */
       width: 33.346%;
+     /*  @media (max-width: 1919.98px) {
+        width: 36%;
+      } */
     }
 
     &_right {
-      margin-right: 115px;
+      /* margin-right: 5%; */
+       margin-right: 115px;
       width: 51%;
     }
   }
@@ -52,7 +69,7 @@
   }
 
   &__profile {
-    margin-bottom: 87px;
+    margin-bottom: 92px;
   }
 
   &__contact {
@@ -66,7 +83,7 @@
   &__education {
     margin-bottom: 69px;
   }
-  
+
   &__experience {
     margin-bottom: 70px;
   }

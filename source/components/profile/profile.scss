@@ -14,18 +14,18 @@
     margin-right: 19px;
   }
   &__title {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 
   &__text {
     display: block;
-    @include text($font-regular, 31px, 400, 0);
+    @include text($font-regular, 2.6rem, 400, 0);
     min-height: 472px;
     line-height: 1.2;
     letter-spacing: -0.1px;
   }
 
   &__span {
-    @include text($font-bold, 31px, 700, 0);
+    @include text($font-bold, 2.6rem, 700, 0);
   }
 }

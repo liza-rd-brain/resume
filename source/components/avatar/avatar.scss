@@ -45,13 +45,14 @@
     text-transform: uppercase;
     line-height: 0.7;
     &_name {
-      @include text($font-light, 104px, 400, 26px);
+      @include text($font-light, 8.7rem, 400, 26px);
     }
     &_surname {
-      @include text($font-bold, 123px, 700, 45px);
+      @include text($font-bold, 10.25rem, 700, 45px);
     }
     &_desc {
-      @include text($font-bold, 50px, 700, 0);
+      @include text($font-bold, 4.17rem, 700, 0);
+      letter-spacing: -1.1px;
     }
   }
 }

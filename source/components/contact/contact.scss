@@ -22,13 +22,13 @@
     min-height: 37px;
   }
   &__name {
-    @include text($font-bold, 41px, 700, $blue);
+    @include text($font-bold, 3.42rem, 700, $blue);
     text-transform: uppercase;
     width: 31%;
   }
 
   &__value {
-    @include text($font-regular, 41px, 400, $black);
+    @include text($font-regular, 3.42rem, 400, $black);
 
   }
 }
