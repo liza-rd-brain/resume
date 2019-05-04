@@ -13,23 +13,22 @@
   flex-wrap: wrap;
   &__wrap {
     position: relative;
-   /*  min-height: 273px; */
   }
   &::before {
     content: "";
     display: block;
     position: absolute;
-    width: 40px;
-    height: 40px;
-    background:$black;
+    width: 3.33rem;
+    height: 3.33rem;
+    background: $black;
     border-radius: 50%;
-    left: -82px;
-    top: 0px;
+    left: -6.83rem;
+    top: 0;
   }
-  
+
   &__text {
     display: block;
-    @include text($font-regular, 2.58rem,400, 0 0 36px 0, $black);
+    @include text($font-regular, 2.58rem, 400, 0 0 3rem 0, $black);
   }
 
   &__title {
@@ -37,19 +36,18 @@
     line-height: 0.75;
     text-transform: uppercase;
     &_name {
-      @include text($font-bold, 4.25rem, 700, 0 33px 32px 0, $blue);
+      @include text($font-bold, 4.25rem, 700, 0 2.75rem 2.66rem 0, $blue);
     }
     &_period {
       @include text($font-regular, 4.25rem, 400, 0, $black-light);
       text-transform: none;
     }
     &_desc {
-      @include text($font-regular, 4.25rem, 400, 0 0 18px 0, $black);
+      @include text($font-regular, 4.25rem, 400, 0 0 1.5rem 0, $black);
       width: 100%;
     }
-    &_black{
-      color:$black;
+    &_black {
+      color: $black;
     }
   }
 }
-

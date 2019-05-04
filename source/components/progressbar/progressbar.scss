@@ -16,13 +16,13 @@ $progress-value: $blue;
   color: $black;
   text-transform: uppercase;
   width: 100%;
-  margin-bottom: 26px;
+  margin-bottom: 2.17rem;
 }
 
 .progressbar__progress {
   background-color: $progress-bar;
-  width: 554px;
-  height: 46px;
+  width: 46.17rem;
+  height: 3.83rem;
   border: none;
 
   &::-webkit-progress-bar {

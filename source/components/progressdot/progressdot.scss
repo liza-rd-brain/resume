@@ -15,7 +15,7 @@ $dot-marked: $blue;
     font-weight: 400;
     color: $black;
     text-transform: uppercase;
-    margin-bottom: 16px;
+    margin-bottom: 1.33rem;
     width: 100%;
     text-align: center;
   }
@@ -27,8 +27,8 @@ $dot-marked: $blue;
   }
 
   &__dot {
-    border: 18px solid $dot;
-    border-radius: 18px;
+    border: 1.5rem solid $dot;
+    border-radius: 1.5rem;
 
     &_marked {
       border-color: $dot-marked;

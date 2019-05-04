@@ -16,12 +16,11 @@
 
   }
   &__title {
-    margin-bottom: 64px;
+    margin-bottom: 5.33rem;
   }
   &__item {
-    margin-bottom: 62px;
+    margin-bottom: 5.16rem;
     display: flex;
-    min-height: 37px;
   }
   &__name {
     @include text($font-bold, 3.42rem, 700, $blue);

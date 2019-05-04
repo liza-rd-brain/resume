@@ -13,24 +13,23 @@
   align-items: center;
 
   &__photo {
-     position: relative;
-    width: 56%;
-    padding-bottom: 56%;
-    border: 2px solid #3d6cb0;
+    position: relative;
+    width: 38.75rem;
+    height: 38.75rem;
+    border: 0.16rem solid $blue;
     border-radius: 50%;
-    margin: 24px 125px 74px 154px; 
+    margin: 2rem 10.42rem 6.17rem 12.83rem;
 
     &:after {
-     
       content: "";
       position: absolute;
       top: 6%;
       right: 6%;
-      width: 87%;
-      height: 87%;
+      width: 33.75rem;
+      height: 33.75rem;
       margin: auto;
       border-radius: 50%;
-      background-color: #3d6cb0; 
+      background-color: $blue;
     }
   }
 
@@ -39,12 +38,12 @@
     color: $black;
     text-transform: uppercase;
     line-height: 0.7;
-    margin-left: 31px;
+    margin-left: 2.58rem;
     &_name {
-      @include text($font-light, 8.7rem, 400, 26px);
+      @include text($font-light, 8.7rem, 400, 2.16rem);
     }
     &_surname {
-      @include text($font-bold, 10.25rem, 700, 45px);
+      @include text($font-bold, 10.25rem, 700, 3.75rem);
     }
     &_desc {
       @include text($font-bold, 4.17rem, 700, 0);
