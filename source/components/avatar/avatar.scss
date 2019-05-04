@@ -7,21 +7,12 @@
   margin-bottom: $margin;
 }
 
-/* $avatar-diameter: */
-
 .avatar {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* width: 100%; */
 
   &__photo {
-    /* width: 60%;
-    position: relative;
-    padding-bottom: 56%;
-    background-color: #3d6cb0;
-    border-radius: 50%;
-    margin: 24px 125px 74px 154px; */
      position: relative;
     width: 56%;
     padding-bottom: 56%;
@@ -30,19 +21,9 @@
     margin: 24px 125px 74px 154px; 
 
     &:after {
-     /*  content: "";
-      position: absolute;
-      display: block;
-      width: 110%;
-      height: 110%;
-      border: 2px solid #3d6cb0;
-      border-radius: 50%;
-      top: 0;
-      right: 0 */
+     
       content: "";
       position: absolute;
-     /*  top: 30px;
-      right: 30px; */
       top: 6%;
       right: 6%;
       width: 87%;

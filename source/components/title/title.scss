@@ -3,7 +3,7 @@
 .title {
   display: flex;
   align-items: center;
-  
+
   &__text {
     color: $blue;
     font-family: $font-bold;
@@ -25,5 +25,11 @@
       margin-left: 18px;
       margin-top: -5px;
     }
+  }
+
+  &__img {
+    width: 143px;
+    height: 143px;
+    margin-right: 3%;
   }
 }
