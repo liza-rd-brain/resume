@@ -1,0 +1,17 @@
+/* @mixin %img-media ($full-weight, $full-height) {
+  weight: $full-weight;
+  height: $full-height;
+
+  @media (max-width: 1919.98px) {
+    width: $full-weight * 0.7;
+    height: $full-height * 0.7;
+  }
+  @media (max-width: 1439.98px) {
+    width: $full-weight * 0.58;
+    height: $full-height * 0.58;
+  }
+  @media (max-width: 1199.98px) {
+    width: $full-weight;
+    height: $full-height;
+  }
+} */

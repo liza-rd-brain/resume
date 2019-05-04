@@ -8,5 +8,6 @@ import "./components/experience/experience";
 import "./components/software/software";
 import "./index.scss";
 import "./_variables.scss";
+import "./_mixins.scss";
 
 

@@ -33,6 +33,9 @@ html {
   @media (max-width: 1439.98px) {
     font-size: 6.9px;
   }
+  @media (max-width: 1199.98px) {
+    font-size: 12px;
+  }
 
   /* @media (max-width: 1919.98px) {
     font-size: 9.2px;
@@ -69,7 +72,7 @@ html {
       width: 33.346%;
 
        @media (max-width: 1199.98px) {
-        max-width: 100%;
+        width: 100%;
       }
     }
 
@@ -79,7 +82,7 @@ html {
       width: 51%;
 
       @media (max-width: 1199.98px) {
-        max-width: 100%;
+        width: 100%;
       }
     }
   }

@@ -1,14 +1,17 @@
+$full-weight: 153px;
+$full-height: 148px;
+
 .experience {
   &__list {
     margin: 0;
     padding-left: 107px;
   }
-  &__title  {
+  &__title {
     margin-bottom: 94px;
   }
   &__img {
-    width: 153px;
-    height: 148px;
-    margin-right: 35px;
+    width: 12.75rem;
+    height: 12.33rem;
+    margin-right: 3%;
   }
 }
