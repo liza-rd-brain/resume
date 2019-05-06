@@ -6,7 +6,6 @@ $dot-marked: $blue;
 .progressdot {
   display: flex;
   flex-wrap: wrap;
-  width: 78%;
   justify-content: center;
 
   &__title {
@@ -22,13 +21,13 @@ $dot-marked: $blue;
 
   &__line {
     display: flex;
-    width: 100%;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   &__dot {
-    border: 1.5rem solid $dot;
+    border: 1.5rem solid #e6e6e6;
     border-radius: 1.5rem;
+    margin: 0 0.9rem;
 
     &_marked {
       border-color: $dot-marked;
