@@ -33,6 +33,29 @@
     }
   }
 
+
+/*   &__photo {
+
+    position: relative;
+    width:38em;
+    height: 38em;
+    border: 0.16em solid $blue;
+    border-radius: 50%;
+    margin: 2em 10.42em 6.17em 12.83em;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 6%;
+      right: 6%;
+      width: 33em;
+      height: 33em;
+      margin: auto;
+      border-radius:33em;
+      background-color: $blue;
+    }
+  } */
+
   &__title {
     display: block;
     color: $black;
