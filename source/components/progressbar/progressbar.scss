@@ -7,6 +7,11 @@ $progress-value: $blue;
   display: flex;
   flex-wrap: wrap;
   width: 44%;
+  @media (max-width:1023.98px) {
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .progressbar__title {

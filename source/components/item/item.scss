@@ -39,7 +39,7 @@
       @include text($font-bold, 4.25rem, 700, 0 2.75rem 2.66rem 0, $blue);
     }
     &_period {
-      @include text($font-regular, 4.25rem, 400, 0, $black-light);
+      @include text($font-regular, 4.25rem, 400, 0 0 2.66rem, $black-light);
       text-transform: none;
     }
     &_desc {

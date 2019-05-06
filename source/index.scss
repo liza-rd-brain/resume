@@ -27,28 +27,41 @@
 
 html {
   font-size: 12px;
-  @media (max-width: 1919.98px) {
-    font-size: 9.2px;
+
+  @media (max-width: 1959.98px) {
+    font-size: 8px;
   }
+
   @media (max-width: 1439.98px) {
-    font-size: 6.9px;
+    font-size: 7px;
   }
+
   @media (max-width: 1199.98px) {
     font-size: 12px;
   }
-
-  /* @media (max-width: 1919.98px) {
-    font-size: 9.2px;
+  @media (max-width: 1023.98px) {
+    font-size: 10px;
   }
-  @media (max-width: 1919.98px) {
-    font-size: 9.2px;
-  } */
+
+  @media (max-width: 767.98px) {
+    font-size: 6.5px;
+  }
+
+  @media (max-width: 424.98px) {
+    font-size: 5px;
+  }
+
+  @media (max-width: 374.98px) {
+    font-size: 4px;
+  }
+
+  @media (max-width: 319.98px) {
+    font-size: 3px;
+  }
 }
 
 .container {
   max-width: 2480px;
-  /*  max-width: 1920px;
-  min-width: 320px; */
   margin: 0 auto;
   background-color: #fff;
   display: flex;
@@ -63,26 +76,34 @@ html {
   }
 
   &__column {
-    margin-top: 152px;
-    margin-bottom: 191px;
+    margin-top: 12.67rem;
+    margin-bottom: 15.92rem;
 
+    @media (max-width: 1199.98px) {
+      margin-top: 7rem;
+      margin-bottom: 7rem;
+    }
     &_left {
-      margin-left: 121px;
-      /* margin-left: 5%; */
-      width: 33.346%;
+      margin-left: 5%;
+      margin-right: 3%;
+      max-width: 33.346%;
 
-       @media (max-width: 1199.98px) {
-        width: 100%;
+      @media (max-width: 1199.98px) {
+        max-width: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
       }
     }
 
     &_right {
-      /* margin-right: 5%; */
-      margin-right: 115px;
-      width: 51%;
+      margin-right: 5%;
+      margin-left: 3%;
+      max-width: 51%;
 
       @media (max-width: 1199.98px) {
-        width: 100%;
+        max-width: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
       }
     }
   }
@@ -112,7 +133,6 @@ html {
   }
 }
 
-
-* {
+/* * {
   outline: 1px solid rgb(228, 207, 16);
-}
+} */
