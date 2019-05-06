@@ -1,5 +1,4 @@
 @import "../../variables";
-@import "../../mixins";
 
 @mixin text($family, $size, $weight, $color) {
   font-family: $family;
