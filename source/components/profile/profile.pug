@@ -11,6 +11,6 @@ include ../title/title.pug
     const PR_ITEM=" pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum."
 
 div(class="profile container__profile")
-    +title(src||PR_SRC, title_name||PR_TITLE_NAME,alt||PR_ALT,width||PR_WIDTH, height||PR_HEIGHT,img_class||PR_IMG_CLASS)(class=title_class||PR_TITLE_CLASS)
+    +title(title_class||PR_TITLE_CLASS, src||PR_SRC, title_name||PR_TITLE_NAME,alt||PR_ALT,width||PR_WIDTH, height||PR_HEIGHT,img_class||PR_IMG_CLASS)
     p(class="profile__text") #{text || PR_TEXT}
         span(class="profile__span") #{item || PR_ITEM}

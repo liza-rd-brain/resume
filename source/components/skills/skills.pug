@@ -18,10 +18,8 @@ include ../progressdot/progressdot.pug
         {ITEM_NAME:"COMMUNICATION",ITEM_VALUE:11}
     ] 
 
-
-
 div(class="skills container__skills")
-    +title(src||SK_SRC, title_name||SK_TITLE_NAME,alt||SK_ALT,width||SK_WIDTH, height||SK_HEIGHT,img_class||SK_IMG_CLASS)(class=title_class||SK_TITLE_ClASS)
+    +title(title_class||SK_TITLE_ClASS,src||SK_SRC, title_name||SK_TITLE_NAME,alt||SK_ALT,width||SK_WIDTH, height||SK_HEIGHT,img_class||SK_IMG_CLASS)
     - for (var i = 0; i < SK_ITEM.length; i++)
         +progressdot(SK_ITEM[i].ITEM_NAME,SK_ITEM_MAX,SK_ITEM[i].ITEM_VALUE)
 

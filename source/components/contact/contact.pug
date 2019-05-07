@@ -18,7 +18,7 @@ include ../title/title.pug
     ] 
 
 div(class="contact container__contact")
-    +title(src||CO_SRC, title_name||CO_TITLE_NAME,alt||CO_ALT,width||CO_WIDTH, height||CO_HEIGHT,img_class||CO_IMG_CLASS)(class=title_class||CO_TITLE_ClASS)
+    +title(title_class||CO_TITLE_ClASS,src||CO_SRC, title_name||CO_TITLE_NAME,alt||CO_ALT,width||CO_WIDTH, height||CO_HEIGHT,img_class||CO_IMG_CLASS)
     - for (var i = 0; i < CO_ITEM.length; i++)
         div(class="contact__item")
                 span(class="contact__name") #{CO_ITEM[i].ITEM_NAME}
