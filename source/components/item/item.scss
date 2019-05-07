@@ -43,7 +43,7 @@
       text-transform: none;
     }
     &_desc {
-      @include text($font-regular, 4.25rem, 400, 0 0 1.5rem 0, $black);
+      @include text($font-regular, 4.25rem, 400, 0 0 2rem 0, $black);
       width: 100%;
     }
     &_black {

@@ -21,6 +21,6 @@ include ../progressbar/progressbar.pug
     ] 
     
 div(class="software container__software")
-    +title(src||SO_SRC, title_name||SO_TITLE_NAME,alt||SO_ALT,width||SO_WIDTH, height||SO_HEIGHT,img_class||SO_IMG_CLASS)(class=title_class||SO_TITLE_ClASS)
+    +title(title_class||SO_TITLE_ClASS, src||SO_SRC, title_name||SO_TITLE_NAME,alt||SO_ALT,width||SO_WIDTH, height||SO_HEIGHT,img_class||SO_IMG_CLASS)
     - for (var i = 0; i < SO_ITEM.length; i++)
         +progressbar(SO_ITEM[i].ITEM_NAME,SO_ITEM_MAX,SO_ITEM[i].ITEM_VALUE)

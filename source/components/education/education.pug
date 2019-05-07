@@ -4,7 +4,7 @@ include ../item/item.pug
 -
     const ED_TITLE_ClASS = "education__title"
     const ED_SRC = require("./components/education/education_icon.png")
-    const ED_TITLE_NAME = "EDUCATION"
+    const ED_TITLE_NAME = "education"
     const ED_ALT="education_icon"
     const ED_WIDTH="148"
     const ED_HEIGHT="143"
@@ -30,7 +30,7 @@ include ../item/item.pug
     ]
 
 div(class ="education container__education")
-    +title(src||ED_SRC, title_name||ED_TITLE_NAME,alt||ED_ALT,width||ED_WIDTH, height||ED_HEIGHT,img_class||ED_IMG_CLASS)(class=title_class||ED_TITLE_ClASS)
+    +title(title_class||ED_TITLE_ClASS,src||ED_SRC, title_name||ED_TITLE_NAME,alt||ED_ALT,width||ED_WIDTH, height||ED_HEIGHT,img_class||ED_IMG_CLASS)
     ul(class="education__list")
         - for (var i = 0; i < ED_ITEM.length; i++)
             +item(ED_ITEM[i].ITEM_NAME,ED_ITEM[i].ITEM_PERIOD,ED_ITEM[i].ITEM_DESC,ED_ITEM[i].ITEM_TEXT)
